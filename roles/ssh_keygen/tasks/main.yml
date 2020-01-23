@@ -1,0 +1,4 @@
+---
+- name: 'print passphrase'
+  debug:
+    msg: 'Passphrase was {{ ssh_passphrase }}'

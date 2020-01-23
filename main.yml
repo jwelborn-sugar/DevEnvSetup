@@ -1,8 +1,10 @@
 ---
 - hosts: 127.0.0.1
   connection: local
-  tasks:
-    - name: test
-      shell: 
-        chdir: ~/Documents/Sugar/DevSetup
-        cmd: echo "Ran" >> test.txt
+  vars_prompt:
+  - name: ssh_passphrase
+    prompt: 'What is your SSH Passphrase?'
+    private: yes
+  roles:
+    - ssh_keygen
+    - geerlingguy.homebrew

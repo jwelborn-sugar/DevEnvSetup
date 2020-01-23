@@ -1,0 +1,24 @@
+---
+homebrew_installed_packages:
+  - grc
+  - wget
+  - gist
+  - git
+  - hub
+  - mysql@5.7
+  - composer
+  - elasticsearch
+  - node
+  - yarn
+
+homebrew_cask_apps:
+  - firefox
+  - firefoxdeveloperedition
+  - google-chrome
+  - google-chrome-canary
+  - phpstorm
+  - sequel-pro
+  - mysqlworkbench
+  - java
+  - vagrant
+  - virtualbox
