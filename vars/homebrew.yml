@@ -8,7 +8,7 @@ homebrew_installed_packages:
   - mysql@5.7
   - composer
   - elasticsearch
-  - node
+  - node@8
   - yarn
 
 homebrew_cask_apps:
@@ -22,3 +22,5 @@ homebrew_cask_apps:
   - java
   - vagrant
   - virtualbox
+  - docker
+  - vagrant-manager
