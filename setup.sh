@@ -1,5 +1,9 @@
 # install macOS prereqs
 xcode-select --install
+xcode-select --install
+
+ruby -e "$(curl -fsSl https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install python
 
 # Start python venv and install requirements
 pip3 install virtualenv
