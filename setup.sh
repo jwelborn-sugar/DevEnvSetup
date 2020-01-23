@@ -2,6 +2,7 @@
 xcode-select --install
 xcode-select --install
 
+# install homebrew and python
 ruby -e "$(curl -fsSl https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install python
 
@@ -14,4 +15,4 @@ pip install -r pyreqs.txt
 # Install ansible Dependencies
 ansible-galaxy install -r requirements.yml
 
-ansible-playbook main.yml
+ansible-playbook main.yml --ask-sudo-pass
