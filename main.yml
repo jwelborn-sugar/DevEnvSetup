@@ -15,5 +15,6 @@
   
   roles:
     - geerlingguy.homebrew
+    - node
     - gulp
     - mango

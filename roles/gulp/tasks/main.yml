@@ -1,7 +1,4 @@
 ---
-- name: install node
-  command:
-    cmd: nvm install 8
 - name: install gulp
   npm:
     name: gulp
