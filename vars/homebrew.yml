@@ -1,4 +1,8 @@
 ---
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask-versions
+
 homebrew_installed_packages:
   - grc
   - wget
@@ -13,7 +17,7 @@ homebrew_installed_packages:
 
 homebrew_cask_apps:
   - firefox
-  - firefoxdeveloperedition
+  - firefox-developer-edition
   - google-chrome
   - google-chrome-canary
   - phpstorm

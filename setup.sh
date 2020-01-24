@@ -4,6 +4,7 @@ xcode-select --install
 
 # install homebrew and python
 ruby -e "$(curl -fsSl https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 brew install python
 
 # Start python venv and install requirements

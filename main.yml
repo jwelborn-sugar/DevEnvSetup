@@ -1,11 +1,10 @@
 ---
 - hosts: 127.0.0.1
   connection: local
-  become: yes
-  become_user: root
-  become_method: sudo
+
   vars_files:
     - vars/homebrew.yml
+  
   vars_prompt:
   - name: github_username
     prompt: 'What is your Sugar GitHub username?'
@@ -13,6 +12,8 @@
   - name: github_password
     prompt: 'What is your Sugar GitHub Password?'
     private: yes
+  
   roles:
     - geerlingguy.homebrew
     - gulp
+    - mango
