@@ -6,4 +6,5 @@
 - name: install gulp-cli
   npm:
     name: gulp-cli
+    state: present
     global: yes
