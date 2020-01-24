@@ -1,15 +1,8 @@
 ---
 - name: clone mango
   git:
-    repo: "https://{{ github_username | urlencode}}:{{ github_password | urlencode }}@github.com/sugarcrm/mango.git"
+    repo: "git@github.com/sugarcrm/mango.git"
     dest: ~/Documents/Sugar/Mango
-
-- name: remove password from stored url
-  git_config:
-    name: remote.origin.url
-    value: https://github.com/sugarcrm/mango.git
-    scope: local
-    repo: ~/Documents/Sugar/Mango
 
 - name: add silent install config
   copy:

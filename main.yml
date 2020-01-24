@@ -5,14 +5,6 @@
   vars_files:
     - vars/homebrew.yml
   
-  vars_prompt:
-  - name: github_username
-    prompt: 'What is your Sugar GitHub username?'
-    private: no
-  - name: github_password
-    prompt: 'What is your Sugar GitHub Password?'
-    private: yes
-  
   roles:
     - geerlingguy.homebrew
     - node
