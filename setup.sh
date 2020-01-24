@@ -16,4 +16,4 @@ pip install -r pyreqs.txt
 # Install ansible Dependencies
 ansible-galaxy install -r -c requirements.yml
 
-ansible-playbook main.yml
+ansible-playbook main.yml --ask-become-pass

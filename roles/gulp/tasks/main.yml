@@ -3,8 +3,10 @@
   npm:
     name: gulp
     global: yes
+  ignore_errors: yes
+
 - name: install gulp-cli
   npm:
     name: gulp-cli
-    state: present
     global: yes
+  ignore_errors: yes
