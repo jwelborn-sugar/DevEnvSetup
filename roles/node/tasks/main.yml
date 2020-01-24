@@ -13,4 +13,4 @@
 
 - name: resource bash_profile and install node 8
   shell:
-    cmd: source ~/.bash_profile; nvm install 8
+    cmd: source ~/.bash_profile; nvm install 8; nvm use 8
