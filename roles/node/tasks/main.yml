@@ -1,0 +1,19 @@
+---
+- name: mk nvm dir
+  command:
+    cmd: mkdir ~/.nvm
+
+- name: update .bash_profile
+  blockinfile:
+    path: ~/.bash_profile
+    block: |
+      export NVM_DIR=~/.nvm
+      source $(brew --prefix nvm)/nvm.sh
+
+- name: resource bash_profile
+  command:
+    cmd: source ~/.bash_profile
+
+- name: install node
+  command:
+    cmd: nvm install 8
