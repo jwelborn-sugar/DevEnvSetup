@@ -12,7 +12,7 @@ homebrew_installed_packages:
   - mysql@5.7
   - composer
   - elasticsearch
-  - node@8
+  - nvm
   - yarn
 
 homebrew_cask_apps:
@@ -23,7 +23,7 @@ homebrew_cask_apps:
   - phpstorm
   - sequel-pro
   - mysqlworkbench
-  - java
+  - adoptopenjdk8
   - vagrant
   - virtualbox
   - docker

@@ -14,6 +14,6 @@ source venv/bin/activate
 pip install -r pyreqs.txt
 
 # Install ansible Dependencies
-ansible-galaxy install -r requirements.yml
+ansible-galaxy install -r -c requirements.yml
 
-ansible-playbook main.yml --ask-sudo-pass
+ansible-playbook main.yml
